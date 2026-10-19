@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Retaj Sameh | Front-End Developer &amp; Data Science Student</title>
+  <meta name="description" content="Portfolio of Retaj Sameh, a Front-End Developer and Computer Science student specializing in Data Science at Alexandria University. Responsive web projects, database design, and ways to get in touch.">
+  <meta name="theme-color" content="#0B0B0B">
+  <meta property="og:title" content="Retaj Sameh | Front-End Developer &amp; Data Science Student">
+  <meta property="og:description" content="Responsive web projects, database design, and contact links for Retaj Sameh.">
+  <meta property="og:type" content="website">
+
+  <!-- Simple yellow "R" favicon, no extra file needed -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0B0B'/%3E%3Ctext x='32' y='46' font-family='Arial,sans-serif' font-size='40' font-weight='700' text-anchor='middle' fill='%23F5C518'%3ER%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    /* Enables the scroll-reveal effect. If script.js has not loaded after 3 seconds,
+       the effect is switched off so no section can stay hidden. */
+    document.documentElement.classList.add('js');
+    setTimeout(function () {
+      if (!window.__portfolioReady) document.documentElement.classList.remove('js');
+    }, 3000);
+  </script>
+</head>
+<body>
+
+  <!-- Icon sprite: every icon on the page is defined once here -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path d="M9.5 8.8c-.3 1.6 1.6 4.6 4.6 5.3l1.2-1.3-1.8-1-.8.7a3.4 3.4 0 0 1-1.6-1.6l.7-.8-1-1.8z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header" id="top">
+    <div class="container nav-bar">
+      <a class="logo" href="#home" aria-label="Retaj Sameh, back to the top">RETAJ<span>.</span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu">
+        <svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home" data-nav>Home</a></li>
+          <li><a href="#about" data-nav>About</a></li>
+          <li><a href="#skills" data-nav>Skills</a></li>
+          <li><a href="#projects" data-nav>Projects</a></li>
+          <li><a href="#services" data-nav>Services</a></li>
+          <li><a href="#contact" data-nav>Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-hello">HELLO, I’M</p>
+          <h1 id="hero-title">Retaj Sameh</h1>
+          <p class="hero-role">Front-End Developer</p>
+          <p class="hero-academic">Computer Science Student specializing in Data Science</p>
+          <p class="hero-desc">I enjoy turning ideas into clean, responsive, and user-friendly web experiences. With a background in Data Science, I combine creativity, analytical thinking, and problem-solving as I continue growing as a Front-End Developer.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore My Work</a>
+            <a class="btn btn-ghost" href="#contact">Let’s Connect</a>
+          </div>
+
+          <ul class="social-row" aria-label="Social profiles">
+            <li><a class="icon-btn" href="https://github.com/RetajSameh" target="_blank" rel="noopener noreferrer" aria-label="Retaj Sameh on GitHub (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+            <li><a class="icon-btn" href="https://www.linkedin.com/in/retaj-sameh-590a46365/" target="_blank" rel="noopener noreferrer" aria-label="Retaj Sameh on LinkedIn (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+          </ul>
+        </div>
+
+        <div class="hero-photo">
+          <div class="photo-ring">
+            <img src="profile-photo.jpg" width="800" height="752" alt="Portrait of Retaj Sameh smiling, wearing a gray hijab and a denim jacket against a golden background.">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section section-alt" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="reveal">
+          <h2 class="section-title" id="about-title">About Me</h2>
+          <div class="about-text">
+            <p>Hi, I’m Retaj Sameh, a Computer Science student at Alexandria University specializing in Data Science.</p>
+            <p>While Data Science is my academic specialization, I discovered a strong passion for Front-End Development and creating engaging, user-friendly web experiences. This passion has led me to focus on building my front-end skills through self-learning and practical projects.</p>
+            <p>I’m developing my skills in HTML, CSS, and JavaScript while learning React and TypeScript. Alongside web development, I continue to strengthen my knowledge of Python, SQL, and data analysis through my academic studies and projects.</p>
+            <p>I’m primarily interested in Front-End Development opportunities where I can contribute to real projects, deliver value, and grow as a developer. I’m also open to suitable opportunities in Data Science and Data Analysis.</p>
+          </div>
+        </div>
+
+        <aside class="about-facts reveal" aria-label="At a glance">
+          <dl>
+            <div><dt>Main focus</dt><dd>Front-End Development</dd></div>
+            <div><dt>Academic specialization</dt><dd>Data Science, Alexandria University</dd></div>
+            <div><dt>Open to</dt><dd>Front-End Development opportunities, and suitable Data Science and Data Analysis opportunities</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 class="section-title reveal" id="skills-title">Skills &amp; Technologies</h2>
+
+        <!-- Front-End (primary) -->
+        <div class="skill-primary reveal">
+          <h3 class="group-title">Front-End Development</h3>
+          <div class="skill-cards">
+            <article class="skill-card">
+              <svg class="icon icon-lg" aria-hidden="true"><use href="#i-code"/></svg>
+              <h4>HTML5</h4>
+              <p>Builds complete, well-structured web pages using semantic HTML.</p>
+            </article>
+            <article class="skill-card">
+              <svg class="icon icon-lg" aria-hidden="true"><use href="#i-layout"/></svg>
+              <h4>CSS3</h4>
+              <p>Styles web pages, creates layouts, and applies visual design and responsive styling techniques.</p>
+            </article>
+            <article class="skill-card">
+              <svg class="icon icon-lg" aria-hidden="true"><use href="#i-terminal"/></svg>
+              <h4>JavaScript</h4>
+              <p>Learning core JavaScript concepts and developing problem-solving skills through practice.</p>
+            </article>
+            <article class="skill-card">
+              <svg class="icon icon-lg" aria-hidden="true"><use href="#i-phone"/></svg>
+              <h4>Responsive Web Design</h4>
+              <p>Creates responsive layouts and adapts web interfaces across desktop, tablet, and mobile screen sizes.</p>
+            </article>
+          </div>
+
+          <div class="chip-groups">
+            <div class="chip-group">
+              <h4>Currently Learning</h4>
+              <ul class="chips chips-accent">
+                <li>React</li>
+                <li>TypeScript</li>
+              </ul>
+            </div>
+            <div class="chip-group">
+              <h4>Development Tools</h4>
+              <ul class="chips">
+                <li>Visual Studio Code</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Science (secondary) -->
+        <div class="skill-secondary reveal">
+          <h3 class="group-title group-title-muted">Data Science</h3>
+          <div class="ds-grid">
+            <div class="ds-box">
+              <h4>Programming &amp; Query Languages</h4>
+              <ul class="chips chips-quiet"><li>Python</li><li>SQL</li><li>Java</li><li>R</li></ul>
+              <p>Practical experience with Python for data analysis and SQL for querying and retrieving data using joins, aggregations, and subqueries. Additional academic experience with Java and R.</p>
+            </div>
+            <div class="ds-box">
+              <h4>Data Analysis &amp; Visualization</h4>
+              <ul class="chips chips-quiet"><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Plotly</li></ul>
+              <p>Experience in preparing datasets, performing exploratory data analysis, summarizing findings, and creating visualizations to communicate patterns and insights.</p>
+            </div>
+            <div class="ds-box">
+              <h4>Statistics &amp; Analytical Methods</h4>
+              <ul class="chips chips-quiet"><li>Statistics &amp; Probability</li><li>Data Cleaning</li><li>Exploratory Data Analysis (EDA)</li><li>Data Visualization</li><li>Hypothesis Testing</li></ul>
+              <p>Academic and practical experience applying statistical methods and hypothesis testing in coursework using Minitab, alongside data analysis techniques.</p>
+            </div>
+            <div class="ds-box">
+              <h4>Machine Learning &amp; Data Mining</h4>
+              <ul class="chips chips-quiet"><li>Scikit-learn</li><li>Machine Learning</li><li>Data Mining</li></ul>
+              <p>Foundational knowledge of machine learning, with introductory hands-on experience building and evaluating models through academic and personal projects. Data mining is also part of my academic studies, with practical experience still developing.</p>
+            </div>
+            <div class="ds-box ds-box-wide">
+              <h4>Tools &amp; Environments</h4>
+              <ul class="chips chips-quiet"><li>Jupyter Notebook</li><li>Google Colab</li><li>MySQL Workbench</li><li>Minitab</li><li>GitHub</li></ul>
+              <p>Familiarity with data analysis environments, database tools, and version control for working on academic and personal projects.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section section-alt" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title" id="projects-title">Featured Projects</h2>
+          <p class="section-intro">A selection of my front-end work and database design experience, highlighting my practical skills and contributions.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects by category">
+          <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All Projects</button>
+          <button type="button" class="filter-btn" data-filter="frontend" aria-pressed="false">Front-End</button>
+          <button type="button" class="filter-btn" data-filter="database" aria-pressed="false">Database Design</button>
+        </div>
+        <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
+
+        <div class="project-grid" id="project-grid">
+
+          <!-- ===== Project 1: Digital Banking ===== -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-media">
+              <img src="digital-banking.jpg" width="1376" height="784" loading="lazy" decoding="async" alt="Digital Banking website shown on a desktop monitor, a tablet, and a mobile phone.">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="badge badge-yellow">Front-End Development</span>
+                <span class="badge">Individual Project</span>
+              </div>
+              <h3>Digital Banking Website</h3>
+              <p>Developed a fully responsive digital banking website independently using HTML5 and CSS3, without JavaScript. Focused on semantic HTML, clean structure, modern CSS layouts, and a consistent user experience across desktop, tablet, and mobile screen sizes.</p>
+              <p class="contribution"><strong>My contribution:</strong> Designed and implemented the website’s front-end structure and styling independently, including responsive layout adjustments and a mobile-friendly navigation layout.</p>
+              <p class="project-note">Built from a Frontend Mentor design challenge.</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>HTML5</li><li>CSS3</li><li>Responsive Web Design</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-sm btn-ghost" href="https://github.com/RetajSameh/Digital-Bank-" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>View Code<span class="sr-only"> for Digital Banking Website (opens in a new tab)</span></a>
+                <a class="btn btn-sm btn-primary" href="https://digital-bank-murex.vercel.app/" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg>Live Demo<span class="sr-only"> of Digital Banking Website (opens in a new tab)</span></a>
+                <a class="icon-btn icon-btn-sm" href="https://www.linkedin.com/feed/update/urn:li:activity:7431452384914030592/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn post about Digital Banking Website (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== Project 2: ScreenSeeker ===== -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-media">
+              <img src="screen-seeker.png" width="480" height="280" loading="lazy" decoding="async" alt="ScreenSeeker movie and TV discovery website shown in light mode and dark mode.">
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="badge badge-yellow">Front-End Development</span>
+                <span class="badge">Team Project</span>
+              </div>
+              <h3>ScreenSeeker</h3>
+              <p>ScreenSeeker is a team-based web development project designed to help users explore and discover movies and TV shows through an organized and user-friendly interface.</p>
+              <p class="contribution"><strong>My role: Responsive CSS.</strong> My contribution focused on implementing responsive CSS, adapting the interface to different screen sizes, and improving the layout across desktop, tablet, and mobile devices.</p>
+              <ul class="tags" aria-label="Technologies">
+                <li>CSS3</li><li>Responsive Web Design</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-sm btn-ghost" href="https://github.com/RetajSameh/Screen-Seeker" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>View Code<span class="sr-only"> for ScreenSeeker (opens in a new tab)</span></a>
+                <a class="icon-btn icon-btn-sm" href="https://www.linkedin.com/feed/update/urn:li:activity:7503527741808586752/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn post about ScreenSeeker (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== Project 3: Library ERD ===== -->
+          <article class="project-card" data-category="database">
+            <button type="button" class="project-media project-media-zoom" data-lightbox="images/library-erd.webp" data-lightbox-alt="Entity-Relationship Diagram of the Library Management System, showing entities such as Book, Category, Publisher, Author, BookCopy, Borrowing, Fine, Member, and Staff with their attributes and relationships." aria-label="View the full Library Management System ERD">
+              <img src="library-erd.webp" width="1471" height="1911" loading="lazy" decoding="async" alt="Entity-Relationship Diagram of the Library Management System, showing entities such as Book, Category, Publisher, Author, BookCopy, Borrowing, Fine, Member, and Staff with their attributes and relationships.">
+              <span class="zoom-hint"><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg>View full diagram</span>
+            </button>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="badge badge-yellow">Database Design</span>
+              </div>
+              <h3>Library Management System — ERD</h3>
+              <p>Designed the Entity-Relationship Diagram (ERD) for a Library Management System, defining the database entities and their relationships as part of the system’s database design.</p>
+              <p class="contribution"><strong>My contribution:</strong> ERD Design</p>
+              <ul class="tags" aria-label="Concepts">
+                <li>Entity-Relationship Diagram</li><li>Database Modeling</li><li>Entity Relationships</li>
+              </ul>
+              <div class="project-links">
+                <a class="btn btn-sm btn-ghost" href="https://github.com/RetajSameh/Library-Management-System" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>View Repository<span class="sr-only"> for Library Management System (opens in a new tab)</span></a>
+                <button type="button" class="btn btn-sm btn-ghost" data-lightbox="images/library-erd.webp" data-lightbox-alt="Entity-Relationship Diagram of the Library Management System."><svg class="icon" aria-hidden="true"><use href="#i-expand"/></svg>Enlarge ERD</button>
+                <a class="icon-btn icon-btn-sm" href="https://www.linkedin.com/feed/update/urn:li:activity:7404455523837898752/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn post about the Library Management System ERD (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <h2 class="section-title reveal" id="services-title">Services</h2>
+        <p class="section-intro reveal">I focus on building responsive web interfaces, improving existing website layouts, and performing basic data analysis. I’m continuously developing my skills through self-learning and practical projects.</p>
+        <div class="service-grid">
+          <article class="service-card service-card-primary reveal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-layout"/></svg>
+            <span class="badge badge-yellow">Front-End</span>
+            <h3>Responsive Website Development</h3>
+            <p>Building responsive web pages using HTML and CSS, with attention to semantic structure, clean styling, and layouts that adapt to different screen sizes.</p>
+            <a class="text-link" href="#contact">Contact Me<span class="sr-only"> about responsive website development</span></a>
+          </article>
+          <article class="service-card service-card-primary reveal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-tool"/></svg>
+            <span class="badge badge-yellow">Front-End</span>
+            <h3>Front-End Styling &amp; Responsive Fixes</h3>
+            <p>Improving existing page layouts by fixing CSS issues, adjusting spacing and alignment, and resolving common responsive design problems.</p>
+            <a class="text-link" href="#contact">Contact Me<span class="sr-only"> about front-end styling and responsive fixes</span></a>
+          </article>
+          <article class="service-card service-card-secondary reveal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-chart"/></svg>
+            <span class="badge">Additional service</span>
+            <h3>Basic Data Analysis</h3>
+            <p>Working with small datasets using Python and Pandas to clean data, explore patterns, create visualizations, and summarize findings.</p>
+            <a class="text-link" href="#contact">Contact Me<span class="sr-only"> about basic data analysis</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section section-alt" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <h2 class="section-title reveal" id="education-title">Education &amp; Learning</h2>
+        <div class="edu-grid">
+          <article class="edu-card reveal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-book"/></svg>
+            <h3>Alexandria University</h3>
+            <p class="edu-degree">Computer Science — Data Science Specialization</p>
+            <p>Studying Computer Science with a specialization in Data Science, building a foundation in programming, databases, statistics, data analysis, and related computing concepts.</p>
+          </article>
+          <article class="edu-card edu-card-learning reveal">
+            <svg class="icon icon-lg" aria-hidden="true"><use href="#i-terminal"/></svg>
+            <h3>Currently Learning</h3>
+            <ul class="check-list">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Continued Front-End Development practice through self-learning and practical projects.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-box reveal">
+        <h2 class="section-title" id="contact-title">Let’s Connect</h2>
+        <p class="section-intro">Have a project in mind, an opportunity to discuss, or just want to connect? Feel free to reach out. I’m open to suitable Front-End Development opportunities and selected Data Science or Data Analysis opportunities.</p>
+
+        <ul class="contact-links">
+          <li class="contact-email-item">
+            <a class="contact-tile" href="mailto:retaj.abdulrazik@gmail.com">
+              <svg class="icon icon-lg" aria-hidden="true"><use href="#i-mail"/></svg><span>Email</span><span class="contact-detail">retaj.abdulrazik@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a class="contact-tile" href="https://www.linkedin.com/in/retaj-sameh-590a46365/" target="_blank" rel="noopener noreferrer" aria-label="Retaj Sameh on LinkedIn (opens in a new tab)">
+              <svg class="icon icon-lg" aria-hidden="true"><use href="#i-linkedin"/></svg><span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a class="contact-tile" href="https://github.com/RetajSameh" target="_blank" rel="noopener noreferrer" aria-label="Retaj Sameh on GitHub (opens in a new tab)">
+              <svg class="icon icon-lg" aria-hidden="true"><use href="#i-github"/></svg><span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a class="contact-tile" href="https://wa.me/201030928400" target="_blank" rel="noopener noreferrer" aria-label="Message Retaj on WhatsApp (opens in a new tab)">
+              <svg class="icon icon-lg" aria-hidden="true"><use href="#i-whatsapp"/></svg><span>WhatsApp</span>
+            </a>
+          </li>
+        </ul>
+
+        <a class="btn btn-primary btn-lg" href="mailto:retaj.abdulrazik@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Send Me an Email</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-text">
+        <p>© <span id="year">2026</span> Retaj Sameh</p>
+        <p class="footer-tag">Designed and built with <span class="accent">care</span>.</p>
+      </div>
+      <ul class="social-row" aria-label="Social profiles">
+        <li><a class="icon-btn icon-btn-sm" href="https://github.com/RetajSameh" target="_blank" rel="noopener noreferrer" aria-label="Retaj Sameh on GitHub (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+        <li><a class="icon-btn icon-btn-sm" href="https://www.linkedin.com/in/retaj-sameh-590a46365/" target="_blank" rel="noopener noreferrer" aria-label="Retaj Sameh on LinkedIn (opens in a new tab)"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+      </ul>
+      <a class="text-link" href="#home"><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg>Back to Top</a>
+    </div>
+  </footer>
+
+  <!-- Floating back-to-top button (appears after scrolling) -->
+  <a class="to-top" id="to-top" href="#home" aria-label="Back to top" hidden><svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></a>
+
+  <!-- ERD viewer -->
+  <dialog class="lightbox" id="lightbox" aria-label="Full-size project image">
+    <div class="lightbox-bar">
+      <button type="button" class="btn btn-sm btn-ghost" id="lightbox-zoom" aria-pressed="false">Show actual size</button>
+      <a class="btn btn-sm btn-ghost" id="lightbox-open" href="#" target="_blank" rel="noopener noreferrer">Open image in new tab</a>
+      <button type="button" class="icon-btn icon-btn-sm" id="lightbox-close" aria-label="Close full-size image"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="lightbox-body">
+      <img id="lightbox-img" src="" alt="">
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
